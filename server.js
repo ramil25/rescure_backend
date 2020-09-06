@@ -20,6 +20,9 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static(__dirname + "/public"));
 app.use('/public', express.static('public'));
+app.get('/api/',(req,res)=>{
+  res.send('<html><body><h1>Hello World</h1></body></html>');
+})
 
 
 const port = process.env.PORT || 5000;

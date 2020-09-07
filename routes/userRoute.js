@@ -11,7 +11,7 @@ router.get("/", async (req, res) => {
       if(getUsers.length<=0){
         res.json({Feedback:'No data found'})
       }else{
-        res.json(getUsers);
+        res.send(getUsers);
       }
     } catch (error) {
       res.status(500).json({ Error: error });

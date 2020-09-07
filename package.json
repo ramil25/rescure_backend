@@ -4,8 +4,7 @@
   "description": "REST API for Rescure App",
   "main": "server.js",
   "scripts": {
-    "test": "start",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false node server"
+    "test": "start"
   },
   "repository": {
     "type": "git",

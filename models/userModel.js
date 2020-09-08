@@ -60,7 +60,7 @@ const User = new Schema({
        type:Date,
        default:Date.now()
    },
-   upDatedAt:{
+   updatedAt:{
        type:Date,
        default:Date.now(),
    },

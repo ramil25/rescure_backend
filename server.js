@@ -5,6 +5,7 @@ const keys = require("./config/keys");
 
 //Routes Uses
 const userRoute =require("./routes/userRoute");
+const postRoute =require("./routes/postRoute")
 
 const app = express();
 
@@ -25,6 +26,7 @@ app.use('/public', express.static('public'));
 
 //Routes
 app.use('/api/user/',userRoute);
+app.use('/api/posts/',postRoute);
 
 app.get('/',(req,res)=>{
   res.send('<html><body><h1>Hello World</h1></body></html>');
